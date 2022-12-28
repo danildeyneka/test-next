@@ -35,4 +35,6 @@ const Index: FC = memo(() => {
     </>
 })
 
+Index.displayName = 'Test Nextjs'
+
 export default Index
