@@ -15,14 +15,13 @@ const Index: FC = memo(() => {
 
     const {products, awaiting} = useAppSelector(state => state.catalog)
 
-    const loader = [...Array(10)].map((_, i) => <Loader key={ i }/>)
+    const loader = [...Array(9)].map((_, i) => <Loader key={ i }/>)
     const mappedProducts = products?.map(p => <Product p={ p } key={ p.id }/>)
 
     useEffect(() => {
         if (!products.length) dispatch(setProducts())
     }, [])
 
-    if (awaiting) return <main className="grid">{ loader }</main>
     return <>
         <nav className={ s.nav }>
             <Image src={ cart } alt="cart" onClick={ () => router.push('cart') }/>
@@ -30,7 +29,7 @@ const Index: FC = memo(() => {
         </nav>
         <main className="grid">
             <Ads/>
-            { mappedProducts }
+            { awaiting ? loader : mappedProducts }
         </main>
     </>
 })

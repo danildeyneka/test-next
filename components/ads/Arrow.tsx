@@ -6,6 +6,6 @@ import { arrow } from '../../assets'
 export const Arrow: FC = () => {
 
     return <div className={ s.arrow }>
-        <Image src={ arrow } alt="arrow"/>
+        <Image src={ arrow } alt="arrow" priority={true}/>
     </div>
 }
