@@ -1,0 +1,7 @@
+export { Header } from './Header'
+export { Hit } from './Hit'
+export { Img } from './Img'
+export { Description } from './Description'
+export { Price } from './Price'
+export { CartButtons } from './CartButtons'
+export { Like } from './Like'

@@ -1,0 +1,140 @@
+// I could decompose styles even more, but you get the point, its a waste of time in this case
+
+.hit {
+  position: absolute;
+  top: 30px;
+  right: 48px;
+  background: #D9362B;
+  color: #FFFFFF;
+  font-size: 12px;
+  height: 24px;
+  width: 50px;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  transform: skew(-30deg);
+
+  span {
+    padding-right: 3px;
+    display: inline-block;
+    transform: skew(30deg);
+  }
+}
+
+.image {
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.header {
+  color: #999999;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  margin-top: -1px;
+  position: relative;
+  font-size: 12px;
+
+  img {
+    width: auto;
+    height: auto;
+    padding: 0 1.5px;
+    vertical-align: middle;
+  }
+}
+
+.reviews {
+  text-decoration: underline;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.desc {
+  height: 66px;
+  font-size: 14px;
+  overflow: clip;
+  line-height: 22px;
+  margin: 7px 0 3px;
+}
+
+.price {
+  color: #2E2E33;
+  font-weight: 500;
+  font-size: 22px;
+
+  span {
+    font-size: 11px;
+    color: #999999;
+    display: inline-block;
+    margin-left: -2.5px;
+  }
+}
+
+// buttons footer
+
+.mainButtons {
+  width: 175px;
+  height: 40px;
+  margin-top: 9px;
+  background: #F5F5F7;
+  border-radius: 90px;
+  display: flex;
+
+  button {
+    color: #fff;
+    padding-top: 0;
+  }
+}
+
+.cartBtn {
+  background: #4056A1;
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 90px;
+  margin-right: 10px;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.changeQty {
+  margin-top: 15px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin-top: 13.5px;
+  font-size: 12px;
+  margin-right: 12.5px;
+  font-weight: 500;
+  color: #2E2E33;
+}
+
+.toCart {
+  width: 175px;
+  border-radius: 90px;
+  text-align: center;
+  border: none;
+  background: #00B177;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 12px;
+  padding-right: 2px;
+  cursor: pointer;
+}
+
+.like {
+  margin-top: 9px;
+  margin-right: -6px;
+  cursor: pointer;
+}

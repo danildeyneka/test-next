@@ -1,0 +1,130 @@
+.wrapper {
+  width: 332px;
+  height: 462px;
+}
+
+.title {
+  margin-top: 21px;
+  width: 276px;
+  height: 77px;
+  color: #2E2E33;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.arrow {
+  margin-bottom: 29px;
+}
+
+// common block section
+
+.adBlock {
+  width: 332px;
+  height: 140px;
+  display: flex;
+  margin-bottom: 10px;
+
+  div {
+    position: relative;
+  }
+}
+
+.discount {
+  position: absolute;
+  height: 24px;
+  width: fit-content;
+  background: #FFDC38;
+  box-sizing: border-box;
+  padding-top: 3px;
+  transform: skew(-30deg);
+
+  span {
+    display: inline-block;
+    transform: skew(30deg);
+    color: #2E2E33;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 10px 6px;
+  }
+}
+
+.button {
+  font-weight: 500;
+  font-size: 11px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  padding: 0;
+  font-family: Roboto, serif;
+  position: relative;
+  z-index: 10;
+}
+
+// individual block section
+
+.ad1 {
+  background: #636B7F;
+  padding: 25px;
+  color: #fff;
+
+  div { // discount position
+    position: absolute;
+    left: 18px;
+    top: 22px;
+  }
+
+  p {
+    display: inline-block;
+    width: 95px;
+    margin-top: 21px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  img {
+    position: absolute;
+    bottom: 23px;
+    left: 65px;
+  }
+}
+
+.ad2 {
+  background: #F5F5F7;
+  padding: 23px 8px 27px 19px;
+  line-height: 24px;
+
+  div { // discount position
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    padding-top: 1px;
+    width: 45px;
+  }
+
+  span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  p {
+    display: inline-block;
+    margin-top: -1px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  button {
+    color: #2E2E33;
+  }
+
+  img {
+    position: absolute;
+    bottom: 23px;
+    left: 59px;
+  }
+}
+
